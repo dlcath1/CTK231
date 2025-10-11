@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Make nav buttons full-width with border */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 10px; /* Space between buttons */
+    }
+
+    nav ul li a {
+      display: block;       /* Full width */
+      width: 100%;          /* Stretch across page */
+      padding: 15px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(to right, #4a90e2, #357ABD);
+      border: 2px solid white; /* Add border */
+      border-radius: 5px;
+      box-sizing: border-box;
+      text-align: center;    /* Center text */
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: linear-gradient(to right, #357ABD, #4a90e2);
+      color: yellow;
+      cursor: pointer;
+    }
+
+    /* Optional: highlight active link */
+    nav ul li a.active {
+      border-color: yellow;
+    }
+  </style>
+</head>
+<body class="page-gallery">
+  <div id="container">
+    <header>
+      <h1><a href="index.html">My Microsite</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Welcome Page</a></li>
+          <li><a href="about.html">About This Site</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="gallery-main">
+      <div class="gallery">
+        <!-- First Image -->
+        <figure>
+          <h2>Carmy</h2>
+          <img src="Carmy.jpg" alt="Carmy in the kitchen">
+          <figcaption>
+            <span class="red-link">This is a link.</span> Aliquam nec suscipit nulla. Quisque vitae faucibus nisl. 
+            Ut eleifend, risus vitae egestas vulputate, urna enim volutpat risus, vel ultricies ipsum urna auctor arcu. 
+            Mauris nec magna quis elit ultricies tristique. Cras vel felis sed libero pellentesque ornare. 
+            Mauris sit amet arcu nulla, nec tempor nisi. Aliquam erat volutpat. Vivamus eu metus in sem egestas imperdiet.
+          </figcaption>
+        </figure>
+
+        <!-- Second Image -->
+        <figure>
+          <h2>Sydney</h2>
+          <img src="Sydney.jpg" alt="Sydney character working in kitchen">
+          <figcaption>
+            <span class="red-link">This is a link.</span> Aliquam nec suscipit nulla. Quisque vitae faucibus nisl. 
+            Ut eleifend, risus vitae egestas vulputate, urna enim volutpat risus, vel ultricies ipsum urna auctor arcu. 
+            Mauris nec magna quis elit ultricies tristique. Cras vel felis sed libero pellentesque ornare. 
+            Mauris sit amet arcu nulla, nec tempor nisi. Aliquam erat volutpat. Vivamus eu metus in sem egestas imperdiet.
+          </figcaption>
+        </figure>
+
+        <!-- Third Image -->
+        <figure>
+          <h2>Richie</h2>
+          <img src="Richie.jpg" alt="Richie character in the kitchen">
+          <figcaption>
+            <span class="red-link">This is a link.</span> Aliquam nec suscipit nulla. Quisque vitae faucibus nisl. 
+            Ut eleifend, risus vitae egestas vulputate, urna enim volutpat risus, vel ultricies ipsum urna auctor arcu. 
+            Mauris nec magna quis elit ultricies tristique. Cras vel felis sed libero pellentesque ornare. 
+            Mauris sit amet arcu nulla, nec tempor nisi. Aliquam erat volutpat. Vivamus eu metus in sem egestas imperdiet.
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://illinoisstate.edu" target="_blank" rel="noopener">
+        <img src="wordmark_isu.png" alt="Illinois State University logo">
+      </a>
+    </footer>
+  </div>
+
+  <script>
+  // Select all nav links
+  const navLinks = document.querySelectorAll('nav ul li a');
+
+  navLinks.forEach(link => {
+    let hoverTimer;
+
+    link.addEventListener('mouseenter', () => {
+      // Clear any existing timer
+      clearTimeout(hoverTimer);
+
+      // Delay redirect slightly so hover effect is visible
+      hoverTimer = setTimeout(() => {
+        // Always force navigation even if it's the current page
+        window.location.assign(link.href);
+      }, 500); // 0.5 second delay
+    });
+
+    link.addEventListener('mouseleave', () => {
+      // Cancel redirect if user moves mouse away
+      clearTimeout(hoverTimer);
+    });
+  });
+</script>
+
+</body>
+</html>
