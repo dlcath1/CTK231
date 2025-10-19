@@ -1,112 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome Page</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Navigation styles */
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav ul li {
-      margin-bottom: 10px; /* Space between buttons */
-    }
-
-    nav ul li a {
-      display: block; /* Full width */
-      width: 100%;   /* Stretch across the page */
-      padding: 15px;
-      text-decoration: none;
-      color: white;
-      background: linear-gradient(to right, #4a90e2, #357ABD);
-      border: 2px solid white; /* Add border around buttons */
-      border-radius: 5px;
-      box-sizing: border-box;
-      transition: all 0.3s ease;
-      text-align: center; /* Center text inside buttons */
-    }
-
-    nav ul li a:hover {
-      background: linear-gradient(to right, #357ABD, #4a90e2);
-      color: yellow;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Goggles Page</title>
 </head>
-<body class="page-welcome">
-  <div id="container">
-    <header>
-      <h1><a href="index.html">Welcome Page</a></h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="nav-link">Welcome Page</a></li>
-          <li><a href="about.html" class="nav-link">About This Site</a></li>
-          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+    <ul>
+        <li><a href="index.html">Eyes</a></li>
+        <li><a href="posters.html">Posters</a></li>
+        <li><a href="zoo.html">Zoo</a></li>
+    </ul>
 
-    <main>
-      <!-- LEFT SIDE: Blue Background -->
-      <section class="left">
-        <h2>Welcome!</h2>
-        <p class="justified bold-text">
-          The navigation link boxes are all the same width regardless of the amount of text inside. 
-          Make the nav link backgrounds change when you roll over them. 
-          Make sure all the text in the links changes color when you roll over them (even the link in the h1). 
-          The main header and navigation have gradients in the background. 
-          Clicking on the ISU image in the footer should open the ISU main site in a new window/tab. 
-          All three of your pages should have the same format for the headers, navigation, and footer. 
-          This paragraph is justified, the others are not.
-        </p>
-      </section>
+    <h1>Image Gallery</h1>
+    <h2>Derrick Cathey</h2>
 
-      <!-- RIGHT SIDE: White Background -->
-      <section class="right">
-        <h2>Another</h2>
-        <img src="TheBeef.jpg" alt="Kitchen scene" class="hero">
-        <p><span class="red-link">This is a link.</span> Duis nec nulla sit amet sem elementum faucibus. Ut felis lorem, eleifend vel iaculis id, eleifend eu nulla. Vestibulum rutrum, eros non tincidunt faucibus, risus turpis pulvinar arcu, ac rutrum orci nibh sed libero.</p>
-        <p>
-          Donec condimentum, nisi sed viverra tempus, nibh diam euismod eros, id laoreet neque elit id nunc. 
-          Sed rutrum suscipit eros in malesuada. 
-          Sed mollis, velit quis interdum sodales, lorem nisl auctor diam, at bibendum dui elit at nunc.
-        </p>
-      </section>
-    </main>
+    <p>"Don't stop believin', hold on to that feelin'"</p>
 
-    <footer>
-      <a href="https://illinoisstate.edu" target="_blank" rel="noopener noreferrer">
-        <img src="wordmark_isu.png" alt="Illinois State University logo">
-      </a>
-    </footer>
-  </div>
-
-  <script>
-    // Select all nav links
-    const navLinks = document.querySelectorAll('nav ul li a');
-
-    navLinks.forEach(link => {
-      let hoverTimer;
-
-      link.addEventListener('mouseenter', () => {
-        clearTimeout(hoverTimer);
-        hoverTimer = setTimeout(() => {
-          window.location.assign(link.href);
-        }, 500); // 0.5 second delay
-      });
-
-      link.addEventListener('mouseleave', () => {
-        clearTimeout(hoverTimer);
-      });
-    });
-  </script>
+    <img src="eyes.JPEG" alt="Close-up of eyes" width="400">
+    <p>This Illinois WPA safety poster uses bold design and simple words to remind workers to protect their vision. The message, “Save Your Eyes—Use Your Goggles,” reflects the New Deal’s emphasis on both labor safety and public education through accessible, eye-catching art.</p>
 </body>
 </html>
-
-
-
