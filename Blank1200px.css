@@ -1,0 +1,90 @@
+/* page base -------------------------------------- */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #000000;           /* solid black background */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100vh;                    /* fill the viewport */
+  padding: 24px;
+  background-color: #000000;            /* black inside the grid too */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  grid-auto-rows: min-content;
+  color: #ffffff;
+}
+
+/* TOP NAV ---------------------------------------- */
+
+#main-nav {
+  grid-column: 7 / 13;                  /* right side of grid */
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+#main-nav a {
+  display: inline-block;
+  background-color: #d4cdcd;            /* gray box like mockup */
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 26px;
+  font-size: 22px;
+}
+
+/* hover state: change colors on hover */
+#main-nav a:hover {
+  background-color: #0000ff;            /* blue */
+  color: #ffffff;
+}
+
+/* BLUE BAR --------------------------------------- */
+
+#blue-bar {
+  grid-column: 8 / 13;
+  height: 20px;
+  background-color: #0000ff;
+  margin-top: 18px;
+}
+
+/* CENTERED TIMER + BUTTON ------------------------ */
+
+#center-content {
+  grid-column: 1 / 13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;                    /* pushes it down like mockup */
+}
+
+#timer {
+  font-size: 120px;
+  font-weight: 400;
+  margin: 0 0 80px 0;
+}
+
+#start-btn {
+  padding: 10px 50px;
+  background-color: #d4cdcd;
+  border: none;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* subtle hover for start button */
+#start-btn:hover {
+  background-color: #0000ff;
+  color: #ffffff;
+}
