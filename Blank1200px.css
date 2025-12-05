@@ -105,6 +105,7 @@ body {
   align-items: start;
 }
 
+/* old single image (no longer used, but safe to keep) */
 #concert-img {
   width: 100%;
   height: auto;
@@ -117,4 +118,48 @@ body {
   line-height: 52px;
   margin: 0;
   padding-left: 24px;
+}
+
+/* =============================================== */
+/* CAROUSEL STYLES (from fancy.css, adapted)      */
+/* =============================================== */
+
+#myCarousel {
+  margin-bottom: 24px;
+  border: 2px solid #ffffff;   /* white border to pop on black */
+  width: 100%;
+}
+
+#myCarousel .f-carousel__slide {
+  text-align: center;
+  padding: 24px;
+  background: #111111;         /* dark gray inside slides */
+}
+
+#myCarousel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* FancyApps arrow customization */
+.f-carousel {
+  --f-arrow-pos: 10px;
+
+  --f-arrow-width: 50px;
+  --f-arrow-height: 50px;
+
+  --f-arrow-svg-width: 32px;
+  --f-arrow-svg-height: 32px;
+  --f-arrow-svg-stroke-width: 2.5;
+
+  --f-arrow-color: #ff0000;
+  --f-arrow-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%),
+                    0 3px 7px -3px rgb(0 0 0 / 30%);
+
+  --f-arrow-border-radius: 50%;
+  --f-arrow-bg: #fff;
+  --f-arrow-hover-bg: #f9f9f9;
+  --f-arrow-active-bg: #f0f0f0;
 }

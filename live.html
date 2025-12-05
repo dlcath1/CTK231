@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Live</title>
+
+  <!-- FancyApps CSS for Fancybox + Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.arrows.css"/>
+
+  <!-- Your site CSS -->
   <link href="Blank1200px.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -11,7 +18,7 @@
   <!-- nav -->
   <nav id="main-nav">
     <a href="live.html" class="active">Live</a>
-    <a href="#">Merch</a>
+    <a href="index.html">Merch</a>
     <a href="#">Music</a>
     <a href="#">About</a>
   </nav>
@@ -20,8 +27,22 @@
 
   <!-- content row -->
   <div id="live-layout">
-    <img src="concert.jpg" alt="Concert crowd" id="concert-img">
 
+    <!-- LEFT: CAROUSEL -->
+    <div class="f-carousel" id="myCarousel">
+      <!-- Update these src values to your actual image filenames -->
+      <div class="f-carousel__slide">
+        <img src="slide1.jpeg" alt="Slide 1">
+      </div>
+      <div class="f-carousel__slide">
+        <img src="slide2.jpeg" alt="Slide 2">
+      </div>
+      <div class="f-carousel__slide">
+        <img src="slide3.jpeg" alt="Slide 3">
+      </div>
+    </div>
+
+    <!-- RIGHT: TOUR DATES -->
     <ul id="tour-list">
       <li>Normal, IL - December 4th</li>
       <li>Champaign, IL - December 15th</li>
@@ -30,5 +51,26 @@
   </div>
 
 </div>
+
+<!-- FancyApps JS for Fancybox + Carousel -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.arrows.umd.js"></script>
+
+<script>
+  // If you later add any [data-fancybox] elements, this will enable Fancybox
+  Fancybox.bind("[data-fancybox]", {
+    // Custom options (optional)
+  });
+
+  // Initialize the carousel (CTK-style, based on your example)
+  const container = document.getElementById("myCarousel");
+  const options = {
+    // Custom options (optional)
+  };
+
+  Carousel(container, options, { Arrows }).init();
+</script>
+
 </body>
 </html>
