@@ -1,109 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About This Site</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Navigation styles */
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
+  <meta charset="UTF-8">
+  <title>Derrick's Portfolio - About</title>
 
-    nav ul li {
-      margin-bottom: 10px; /* Space between buttons */
-    }
 
-    nav ul li a {
-      display: block;      /* Full width */
-      width: 100%;         /* Stretch across page */
-      padding: 15px;
-      text-decoration: none;
-      color: white;
-      background: linear-gradient(to right, #4a90e2, #357ABD);
-      border: 2px solid white; /* Add border */
-      border-radius: 5px;
-      box-sizing: border-box;
-      transition: all 0.3s ease;
-      text-align: center;  /* Center text */
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    nav ul li a:hover {
-      background: linear-gradient(to right, #357ABD, #4a90e2);
-      color: yellow;
-      cursor: pointer;
-    }
 
-    /* Optional: highlight active link differently */
-    nav ul li a.active {
-      border-color: yellow;
-    }
-  </style>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="finalportfolio.css">
 </head>
-<body class="page-about">
-  <div id="container">
-    <header>
-      <h1><a href="index.html">Make this h1 a link to the welcome page</a></h1>
-      <nav>
+<body>
+
+
+  <header class="top-bar">
+    <div class="page">
+      <h1>DERRICK'S PORTFOLIO</h1>
+
+      <nav class="site-nav">
         <ul>
-          <li><a href="index.html">Welcome Page</a></li>
-          <li><a href="about.html" class="active">About This Site</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="finalportfolio.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-    </header>
 
-    <main>
-      <!-- LEFT SIDE (white background) -->
-      <section class="left">
-        <h2>About This Site</h2>
+      <div class="header-social">
+        <a href="#" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="X / Twitter">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page page-main">
+    <h1>About Me</h1>
+    <p class="lead">
+      I'm a college student building skills in music, sound, and web design.
+      This site is a place to organize what I'm working on and show how my projects connect.
+    </p>
+
+    <section class="about-grid">
+      <article class="about-block">
+        <h2>School &amp; Classes</h2>
         <p>
-          <img src="TheBear.jpg" alt="Kitchen scene" class="hero-right">
-          <span class="red-link">This is a link.</span> Duis nec nulla sit amet sem elementum faucibus. Ut felis lorem, eleifend vel iaculis id, eleifend eu nulla. Vestibulum rutrum, eros non tincidunt faucibus, risus turpis pulvinar arcu, ac fermentum orci nibh sed libero. Integer aliquet mauris vel velit venenatis hendrerit ac id sapien. Praesent ornare purus sed massa viverra malesuada. Proin molestie nibh at nibh lobortis interdum. Phasellus sed turpis aliquam justo condimentum tincidunt. Morbi accumsan iaculis sapien, ac dapibus nunc sodales et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ante et nibh pretium eleifend condimentum diam pulvinar. Fusce at est sed sapien ullamcorper sodales ac sed purus. Morbi ante orci, fringilla at dignissim eu, pellentesque at massa. Nulla ac elit vitae ipsum varius viverra.
+          I'm studying creative and technical media and spending a lot of time in classes
+          that focus on web design, audio production, and digital tools.
         </p>
+      </article>
+
+      <article class="about-block">
+        <h2>Music &amp; Sound</h2>
         <p>
-          <span class="red-link">This is a link.</span> Aliquam nec suscipit nulla. Quisque vitae faucibus nisl. Ut eleifend, risus vitae egestas vulputate, urna enim volutpat risus, vel ultricies ipsum urna auctor arcu. Mauris nec magna quis elit ultricies tristique. Cras vel felis sed libero pellentesque ornare. Mauris sit amet arcu nulla, nec tempor nisi. Aliquam erat volutpat. Vivamus eu metus in sem egestas imperdiet.
+          I record and produce my own music, mainly in the alternative hip-hop / R&amp;B lane.
+    
         </p>
-      </section>
+      </article>
 
-      <!-- RIGHT SIDE (sky blue background, smaller width, bold text) -->
-      <section class="right">
+      <article class="about-block">
+        <h2>Design &amp; Web</h2>
         <p>
-          Donec condimentum, nisi sed viverra tempus, nibh diam euismod eros, id laoreet neque elit id nunc. Sed rutrum suscipit eros in malesuada. Sed mollis, velit quis interdum sodales, lorem nisl auctor diam, at bibendum dui elit at nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam lacinia sem quis risus tincidunt aliquam tempor felis interdum. Vestibulum placerat, est in faucibus venenatis, diam nisl tempor magna, eget ullamcorper felis massa in tellus. Duis et nibh sed est aliquet fermentum. Suspendisse sit amet massa lorem.
+          On the design side, I'm learning how to structure pages with HTML and style them with CSS.
+          I'm interested in simple layouts that are easy to read but still feel personal, with color,
+          typography, and images that match my music and branding ideas.
         </p>
-      </section>
-    </main>
+      </article>
 
-    <footer>
-      <a href="https://illinoisstate.edu" target="_blank" rel="noopener">
-        <img src="wordmark_isu.png" alt="Illinois State University logo">
-      </a>
-    </footer>
-  </div>
+      <article class="about-block">
+        <h2>What I'm Working Toward</h2>
+        <p>
+          Long term, I want to make a living off music and creative work. Short term,
+          I'm focused on getting better project by project—improving my tracks, learning
+          more about mixing, and making my web projects feel more like a real portfolio.
+        </p>
+      </article>
+    </section>
+  </main>
 
-  <script>
-    // Select all nav links
-    const navLinks = document.querySelectorAll('nav ul li a');
 
-    navLinks.forEach(link => {
-      let hoverTimer;
 
-      link.addEventListener('mouseenter', () => {
-        clearTimeout(hoverTimer);
-        hoverTimer = setTimeout(() => {
-          window.location.assign(link.href);
-        }, 500); // 0.5 second delay
-      });
 
-      link.addEventListener('mouseleave', () => {
-        clearTimeout(hoverTimer);
-      });
-    });
-  </script>
+
+  <section id="contact" class="page social-section">
+    <h3>Contact</h3>
+    <p><a href="mailto:youremail@example.com">drkc47@gmail.com</a></p>
+  </section>
+
+
 </body>
 </html>
-
-
